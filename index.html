@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f5f7fa;
+            font-family: "Microsoft YaHei", sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            text-align: center;
+        }
+        .avatar {
+            width: 180px;
+            height: 220px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            object-fit: contain;
+            border: 2px solid #f0f2f5;
+        }
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 15px;
+        }
+        .label {
+            font-weight: 500;
+            color: #555;
+        }
+        @media (max-width: 480px) {
+            .info { grid-template-columns: 1fr; }
+            .avatar { width: 140px; height: 180px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://p26-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/f1bf8e518d3b4547bfc12652ed0e8b6e.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=202604081622050B70EEB1EEE72873D0D3&rrcfp=8a172a1a&x-expires=1776241326&x-signature=UhDi4dIUkW28REDwAlLWV0HsGQM%3D" alt="杨东海" class="avatar">
+        <div class="name">杨东海</div>
+        <div class="info">
+            <div><span class="label">政治面貌：</span>中共党员</div>
+            <div><span class="label">警衔：</span>武警中士</div>
+            <div><span class="label">服役年限：</span>4年1个月</div>
+            <div><span class="label">学历：</span>在读研究生</div>
+        </div>
+    </div>
+</body>
+</html>
